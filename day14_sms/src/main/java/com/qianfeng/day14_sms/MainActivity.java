@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity{
         values.put("body", "尊敬的工商银行客户，你尾号为888的卡收入(工资)358,960.00元，请放心消费");
         values.put("date", System.currentTimeMillis());
         resolver.insert(uri, values);
+        Log.d("aa", "bbb");
 
     }
 }
